@@ -77,7 +77,7 @@
       max-width: 700px;
     }
     @media (max-width: 480px) {
-      max-width: 320px;
+      max-width: 300px;
     }
   }
 
@@ -93,6 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0px 15px 0px;
   }
 
   .header__list {
@@ -100,28 +101,39 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px 0px 30px 0px;
-    
+      @media (max-width: 480px) {
+        display: none;
+      }
   }
 
   .header__list a {
     font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-margin-left: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 25px;
   }
 
   .header__contact a {
     font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+      @media (max-width: 480px) {
+        display: none;
+      }
   }
 
+  .header-burger {
+    display: none;
+    @media (max-width: 480px) {
+      display: block;
+    }
+  }
  
 
   ///////////////////////////..........................Welcome.......................................
@@ -132,26 +144,46 @@ color: #FFFFFF;
     background-repeat: no-repeat;
     padding-top: 222px;
     padding-bottom: 150px;
+    @media (max-width: 480px) {
+      background-image: url(img/main/mobile.png);
+    }
 }
 
 .welcome__title {
     font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 900;
-font-size: 64px;
-line-height: 84px;
-color: #FFFFFF;
-margin-bottom: 22px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 84px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+    @media (max-width: 480px) {
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #FFFFFF;
+    }
 }
 
 .welcome__text {
     font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-color: #FFFFFF;
-margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    @media (max-width: 480px) {
+      font-family: 'Halvar Breitschrift';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
 }
 
 .btn {
@@ -161,69 +193,135 @@ margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-border-radius: 10px;
-font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 900;
-font-size: 16px;
-line-height: 19px;
-color: #000000;
+    border-radius: 10px;
+    font-family: 'Halvar Breitschrift';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
 //////////////////////////............................Greetings.......................................................
 
 .greetings {
   padding: 130px 0px 130px 0px;
+  @media (max-width: 480px) {
+    padding: 70px 0px 70px 0px;
+  }
 }
 
 .greetings-body {
   display: flex;
-gap: 40px;
+  gap: 40px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
 }
 
 .greetings__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  @media (max-width: 480px) {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+  }
 }
 
 .greetings__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #000000;
-margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 20px;
+  @media (max-width: 480px) {
+    font-family: 'Halvar Breitschrift';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+}
+
+.greetings__img {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+  
+}
+
+.greetings-left {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 ///////......................................Portfolio...............................................................
 
 .portfolio {
   padding: 0px 0px 160px 0px;
+  @media (max-width: 480px) {
+    padding: 0px 0px 70px 0px;
+  }
+}
+
+.portfolio-body {
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .portfolio__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-color: #000000;
-margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 15px;
+  @media (max-width: 480px) {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
 }
 
 .portfolio__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-margin-bottom: 62px;
-color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 62px;
+  color: #000000;
+  @media (max-width: 480px) {
+    font-family: 'Halvar Breitschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+  }
 }
 
 .portfolio-galery {
@@ -232,6 +330,9 @@ color: #000000;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 13vw);
   grid-gap: 10px;
+  @media (max-width: 480px) {
+    min-height: 150px;
+  }
 }
 
 .galery__img {
@@ -297,13 +398,18 @@ color: #000000;
   align-items: center;
   background: #1F1F1F;
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-border-radius: 10px;
-color: #FFFFFF;
-
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  @media (max-width: 480px) {
+    width: 160px;
+    height: 40px;
+    font-size: 8px;
+    line-height: 9px;
+  }
 }
 
 
@@ -311,31 +417,58 @@ color: #FFFFFF;
 
 .key {
   padding: 0px 0px 130px 0px;
+  @media (max-width: 480px) {
+    padding: 0px 0px 70px 0px;
+  }
 }
 
 .key-body {
   display: flex;
   gap: 35px;
+  @media (max-width: 480px) {
+    width: 100%;
+   gap: 0px;
+   flex-direction: column;
+   align-items: center;
+  }
+}
+
+.key__img {
+  width: 100%;
 }
 
 .key__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-color: #000000;
-margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 20px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .key__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #000000;
-margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 25px;
+  @media (max-width: 480px) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.key__info {
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .key-buttons {
@@ -350,15 +483,19 @@ margin-bottom: 25px;
   width: 260px;
   height: 60px;
   background: #1F1F1F;
-border-radius: 10px;
-font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-
-color: #FFFFFF;
-
+  border-radius: 10px;
+  font-family: 'Halvar Breitschrift';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+  @media (max-width: 480px) {
+    width: 140px;
+    height: 38px;
+    font-size: 8px;
+    line-height: 9px;
+  }
 }
 
 //////////////////..................................Map..........................................
@@ -376,23 +513,33 @@ color: #FFFFFF;
 
 .work__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-color: #000000;
-margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 20px;
+  @media (max-width: 480px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .work__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-color: #000000;
-margin-top: 10px;
-margin-bottom: 45px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  @media (max-width: 480px) {
+    width: 70%;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 
@@ -414,23 +561,30 @@ margin-bottom: 45px;
 
 .block__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
-color: #000000;
-margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 10px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .block__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-text-align: right;
-color: #000000;
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: right;
+  color: #000000;
+  @media (max-width: 480px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 
@@ -454,39 +608,87 @@ color: #000000;
  
 }
 
+.map-left {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
 .map-right {
   padding-top: 14%;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.map-mobile {
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.mobile-block {
+  @media (max-width: 480px) {
+    margin-bottom: 14%;
+    padding-left: 5%;
+  }
 }
 
 ///////////////////.............................Reviews.............................................................
 
 .reviews {
   padding: 130px 0px 145px 0px;
+  @media (max-width: 480px) {
+    padding: 100px 0px 70px 0px;
+  }
+}
+
+.reviews-body {
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .reviews__title {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 47px;
-color: #000000;
-margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 15px;
+  @media (max-width: 480px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .reviews__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-color: #000000;
-margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: 20px;
+  @media (max-width: 480px) {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+  }
 }
 
 .reviews-info {
   display: flex;
   margin-top: 30px;
+  @media (max-width: 480px) {
+   flex-direction: column;
+   gap: 0px;
+   align-items: center;
+  }
 }
 
 .info-left {
@@ -511,16 +713,25 @@ margin-top: 10px;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  @media (max-width: 480px) {
+   width: 100%;
+   padding: 10px 0px 0px 0px;
+  }
 }
 
 .right__text {
   font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #000000;
-margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 10px;
+  @media (max-width: 480px) {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .right__button {
@@ -530,13 +741,19 @@ margin-bottom: 10px;
   width: 260px;
   height: 60px;
   background: #1F1F1F;
-border-radius: 10px;
-font-family: 'Halvar Breitschrift';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Halvar Breitschrift';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  @media (max-width: 480px) {
+    width: 140px;
+    height: 40px;
+    font-size: 8px;
+    line-height: 9px;
+   }
 }
 
 ////////////..................................Form......................................................
@@ -544,6 +761,9 @@ color: #FFFFFF;
 
 .form {
   padding: 0px 0px 200px 0px;
+  @media (max-width: 480px) {
+    padding: 0px 0px 110px 0px;
+   }
 }
 
 .form-body {
@@ -559,10 +779,17 @@ color: #FFFFFF;
   font-size: 36px;
   line-height: 47px;
   color: #1F1F1F;
+  @media (max-width: 480px) {
+    font-size: 11px;
+    line-height: 15px;
+   }
 }
 
 .form__line {
   margin: 15px 0px 30px 0px;
+  @media (max-width: 480px) {
+    width: 100%;
+   }
 }
 
 .form__input {
@@ -572,6 +799,10 @@ color: #FFFFFF;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 20px 40px 20px 20px;
+  @media (max-width: 480px) {
+    width: 300px;
+    height: 27px;
+   }
 }
 
 .form__input:placeholder-shown {
@@ -581,7 +812,10 @@ color: #FFFFFF;
   font-size: 13px;
   line-height: 15px;
   color: #000000;
-  
+  @media (max-width: 480px) {
+    font-size: 8px;
+    line-height: 9px;
+   }
 }
 
 .form__form {
@@ -603,7 +837,18 @@ color: #FFFFFF;
   line-height: 23px;
   padding: 20px 60px 20px 60px;
   color: #FFFFFF;
+  @media (max-width: 480px) {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 12px;
+   }
+}
 
+.line__img {
+  @media (max-width: 480px) {
+    width: 100%;
+   }
 }
 
 //////////////////////..........................Footer................................................................
@@ -614,8 +859,11 @@ background-color: #1F1F1F;
 
 .footer-body {
   display: flex;
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 480px) {
+   justify-content: center;
+   }
 }
 
 .footer__list {
@@ -623,24 +871,29 @@ background-color: #1F1F1F;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
-  
+  @media (max-width: 480px) {
+    display: none;
+   }
 }
 
 .footer__list a {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-margin-left: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-left: 25px;
 }
 
 .footer__contact a {
   font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }

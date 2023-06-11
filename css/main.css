@@ -80,7 +80,7 @@ img {
 }
 @media (max-width: 480px) {
   .container {
-    max-width: 320px;
+    max-width: 300px;
   }
 }
 
@@ -93,6 +93,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 0px 15px 0px;
 }
 
 .header__list {
@@ -100,6 +101,11 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
+}
+@media (max-width: 480px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__list a {
@@ -120,6 +126,20 @@ img {
   line-height: 26px;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .header__contact a {
+    display: none;
+  }
+}
+
+.header-burger {
+  display: none;
+}
+@media (max-width: 480px) {
+  .header-burger {
+    display: block;
+  }
+}
 
 .welcome {
   background-image: url(img/main/Slider/ian-schneider-PAykYb-8Er8-unsplash\ 1.png);
@@ -127,6 +147,11 @@ img {
   background-repeat: no-repeat;
   padding-top: 222px;
   padding-bottom: 150px;
+}
+@media (max-width: 480px) {
+  .welcome {
+    background-image: url(img/main/mobile.png);
+  }
 }
 
 .welcome__title {
@@ -138,6 +163,17 @@ img {
   color: #FFFFFF;
   margin-bottom: 22px;
 }
+@media (max-width: 480px) {
+  .welcome__title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
 
 .welcome__text {
   font-family: "Halvar Breitschrift";
@@ -147,6 +183,16 @@ img {
   line-height: 28px;
   color: #FFFFFF;
   margin-bottom: 50px;
+}
+@media (max-width: 480px) {
+  .welcome__text {
+    font-family: "Halvar Breitschrift";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
 }
 
 .btn {
@@ -168,10 +214,22 @@ img {
 .greetings {
   padding: 130px 0px 130px 0px;
 }
+@media (max-width: 480px) {
+  .greetings {
+    padding: 70px 0px 70px 0px;
+  }
+}
 
 .greetings-body {
   display: flex;
   gap: 40px;
+}
+@media (max-width: 480px) {
+  .greetings-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
 }
 
 .greetings__title {
@@ -181,6 +239,17 @@ img {
   font-size: 36px;
   line-height: 47px;
   color: #000000;
+}
+@media (max-width: 480px) {
+  .greetings__title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+  }
 }
 
 .greetings__text {
@@ -192,9 +261,44 @@ img {
   color: #000000;
   margin-top: 20px;
 }
+@media (max-width: 480px) {
+  .greetings__text {
+    font-family: "Halvar Breitschrift";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 480px) {
+  .greetings__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .greetings-left {
+    width: 100%;
+  }
+}
 
 .portfolio {
   padding: 0px 0px 160px 0px;
+}
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 0px 0px 70px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .portfolio__title {
@@ -206,6 +310,16 @@ img {
   color: #000000;
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .portfolio__title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
 
 .portfolio__text {
   font-family: "Halvar Breitschrift";
@@ -216,6 +330,17 @@ img {
   margin-bottom: 62px;
   color: #000000;
 }
+@media (max-width: 480px) {
+  .portfolio__text {
+    font-family: "Halvar Breitschrift";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+  }
+}
 
 .portfolio-galery {
   min-height: 400px;
@@ -223,6 +348,11 @@ img {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 13vw);
   grid-gap: 10px;
+}
+@media (max-width: 480px) {
+  .portfolio-galery {
+    min-height: 150px;
+  }
 }
 
 .galery__img {
@@ -297,14 +427,39 @@ img {
   border-radius: 10px;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .portfolio__button {
+    width: 160px;
+    height: 40px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+}
 
 .key {
   padding: 0px 0px 130px 0px;
+}
+@media (max-width: 480px) {
+  .key {
+    padding: 0px 0px 70px 0px;
+  }
 }
 
 .key-body {
   display: flex;
   gap: 35px;
+}
+@media (max-width: 480px) {
+  .key-body {
+    width: 100%;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.key__img {
+  width: 100%;
 }
 
 .key__title {
@@ -316,6 +471,11 @@ img {
   color: #000000;
   margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+  .key__title {
+    display: none;
+  }
+}
 
 .key__text {
   font-family: "Halvar Breitschrift";
@@ -325,6 +485,19 @@ img {
   line-height: 23px;
   color: #000000;
   margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .key__text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .key__info {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .key-buttons {
@@ -347,6 +520,14 @@ img {
   line-height: 17px;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .key__button {
+    width: 140px;
+    height: 38px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+}
 
 .work-map {
   display: flex;
@@ -367,6 +548,12 @@ img {
   color: #000000;
   margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+  .work__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 .work__text {
   font-family: "Halvar Breitschrift";
@@ -377,6 +564,14 @@ img {
   color: #000000;
   margin-top: 10px;
   margin-bottom: 45px;
+}
+@media (max-width: 480px) {
+  .work__text {
+    width: 70%;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .map-center {
@@ -404,6 +599,12 @@ img {
   color: #000000;
   margin-bottom: 10px;
 }
+@media (max-width: 480px) {
+  .block__title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 
 .block__text {
   font-family: "Halvar Breitschrift";
@@ -413,6 +614,12 @@ img {
   line-height: 17px;
   text-align: right;
   color: #000000;
+}
+@media (max-width: 480px) {
+  .block__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .left-block {
@@ -434,12 +641,52 @@ img {
   padding: 0px 10px 0px 10px;
 }
 
+@media (max-width: 480px) {
+  .map-left {
+    display: none;
+  }
+}
+
 .map-right {
   padding-top: 14%;
+}
+@media (max-width: 480px) {
+  .map-right {
+    display: none;
+  }
+}
+
+.map-mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  .map-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-block {
+    margin-bottom: 14%;
+    padding-left: 5%;
+  }
 }
 
 .reviews {
   padding: 130px 0px 145px 0px;
+}
+@media (max-width: 480px) {
+  .reviews {
+    padding: 100px 0px 70px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .reviews__title {
@@ -451,6 +698,12 @@ img {
   color: #000000;
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .reviews__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 .reviews__text {
   font-family: "Halvar Breitschrift";
@@ -461,10 +714,24 @@ img {
   color: #000000;
   margin-top: 20px;
 }
+@media (max-width: 480px) {
+  .reviews__text {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
 
 .reviews-info {
   display: flex;
   margin-top: 30px;
+}
+@media (max-width: 480px) {
+  .reviews-info {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
 }
 
 .info-left {
@@ -490,6 +757,12 @@ img {
   align-items: center;
   padding-top: 30px;
 }
+@media (max-width: 480px) {
+  .info-right {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+}
 
 .right__text {
   font-family: "Halvar Breitschrift";
@@ -499,6 +772,13 @@ img {
   line-height: 19px;
   color: #000000;
   margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .right__text {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .right__button {
@@ -516,9 +796,22 @@ img {
   line-height: 19px;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .right__button {
+    width: 140px;
+    height: 40px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+}
 
 .form {
   padding: 0px 0px 200px 0px;
+}
+@media (max-width: 480px) {
+  .form {
+    padding: 0px 0px 110px 0px;
+  }
 }
 
 .form-body {
@@ -535,9 +828,20 @@ img {
   line-height: 47px;
   color: #1F1F1F;
 }
+@media (max-width: 480px) {
+  .form__title {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
 
 .form__line {
   margin: 15px 0px 30px 0px;
+}
+@media (max-width: 480px) {
+  .form__line {
+    width: 100%;
+  }
 }
 
 .form__input {
@@ -547,6 +851,12 @@ img {
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 20px 40px 20px 20px;
+}
+@media (max-width: 480px) {
+  .form__input {
+    width: 300px;
+    height: 27px;
+  }
 }
 
 .form__input:-moz-placeholder-shown {
@@ -565,6 +875,16 @@ img {
   font-size: 13px;
   line-height: 15px;
   color: #000000;
+}
+@media (max-width: 480px) {
+  .form__input:-moz-placeholder-shown {
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .form__input:placeholder-shown {
+    font-size: 8px;
+    line-height: 9px;
+  }
 }
 
 .form__form {
@@ -587,6 +907,20 @@ img {
   padding: 20px 60px 20px 60px;
   color: #FFFFFF;
 }
+@media (max-width: 480px) {
+  .form__button {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line__img {
+    width: 100%;
+  }
+}
 
 .footer {
   background-color: #1F1F1F;
@@ -597,12 +931,22 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 480px) {
+  .footer-body {
+    justify-content: center;
+  }
+}
 
 .footer__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
+}
+@media (max-width: 480px) {
+  .footer__list {
+    display: none;
+  }
 }
 
 .footer__list a {
@@ -622,4 +966,9 @@ img {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .footer__contact a {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
