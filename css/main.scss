@@ -200,6 +200,7 @@
       font-size: 16px;
       line-height: 19px;
       color: #FFFFFF;
+      text-align: center;
     }
 }
 
@@ -260,6 +261,7 @@
     line-height: 26px;
     color: #000000;
     margin-top: 10px;
+    text-align: center;
   }
 }
 
@@ -297,6 +299,9 @@
 
 .greetings-right {
   width: 50%;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .greetings-left {

@@ -151,6 +151,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 410px 15px 90px 15px;
+    @media (max-width: 480px) {
+      padding: 340px 15px 90px 15px;
+      background-image: url(img/about/mobile_about.png);
+    }
   }
 
   .welcome-body {
@@ -167,6 +171,11 @@
     line-height: 63px;
     color: #FFFFFF;
     margin-bottom: 20px;
+    @media (max-width: 480px) {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
   }
 
   .welcome__text {
@@ -177,12 +186,17 @@
     line-height: 28px;
     color: #FFFFFF;
     margin: 30px 0px 30px 0px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+    }
   }
 
   ////////////..................................Team...................................................
   
     .team {
-        padding: 130px;
+        padding: 70px 100px;
     }
 
   .team-body {
@@ -199,6 +213,11 @@
     line-height: 28px;
     text-align: center;
     color: #000000;
+    @media (max-width: 480px) {
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+    }
   }
 
   //////////////////////////............................Greetings.......................................................
@@ -279,6 +298,9 @@
   
   .greetings-right {
     width: 50%;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
   
   .greetings-left {
