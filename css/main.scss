@@ -74,7 +74,7 @@
     max-width: 1160px;
     margin: 0 auto;
     @media (max-width: 1000px) {
-      max-width: 700px;
+      max-width: 765px;
     }
     @media (max-width: 480px) {
       max-width: 300px;
@@ -114,6 +114,11 @@
     line-height: 21px;
     color: #FFFFFF;
     margin-left: 25px;
+    @media (max-width: 1000px) {
+      margin-left: 10px;
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 
   .header__contact a {
@@ -123,6 +128,10 @@
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 21px;
+      }
       @media (max-width: 480px) {
         display: none;
       }
@@ -157,6 +166,10 @@
     line-height: 84px;
     color: #FFFFFF;
     margin-bottom: 22px;
+    @media (max-width: 1000px) {
+      font-size: 48px;
+      line-height: 63px;
+    }
     @media (max-width: 480px) {
       font-family: 'Roboto Slab';
       font-style: normal;
@@ -176,6 +189,10 @@
     line-height: 28px;
     color: #FFFFFF;
     margin-bottom: 50px;
+    @media (max-width: 1000px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
     @media (max-width: 480px) {
       font-family: 'Halvar Breitschrift';
       font-style: normal;
@@ -214,6 +231,9 @@
 .greetings-body {
   display: flex;
   gap: 40px;
+  @media (max-width: 1000px) {
+    gap: 10px;
+  }
   @media (max-width: 480px) {
     flex-direction: column;
     align-items: center;
@@ -228,6 +248,10 @@
   font-size: 36px;
   line-height: 47px;
   color: #000000;
+  @media (max-width: 1000px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
   @media (max-width: 480px) {
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -247,6 +271,10 @@
   line-height: 23px;
   color: #000000;
   margin-top: 20px;
+  @media (max-width: 1000px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
   @media (max-width: 480px) {
     font-family: 'Halvar Breitschrift';
     font-style: normal;
@@ -258,13 +286,21 @@
 }
 
 .greetings__img {
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
   @media (max-width: 480px) {
     width: 100%;
   }
   
 }
 
+.greetings-right {
+  width: 50%;
+}
+
 .greetings-left {
+  width: 50%;
   @media (max-width: 480px) {
     width: 100%;
   }
@@ -896,4 +932,48 @@ background-color: #1F1F1F;
   @media (max-width: 480px) {
     display: none;
   }
+}
+
+
+///////////.............................................Burger..................................................
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727;
+  display: none;
+}
+
+.burger-wrapper {
+  padding: 50px 30px 50px 30px;
+}
+
+.burger-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger__cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.burger__list a {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+ 
+}
+
+.burger__list li {
+  margin-top: 30px;
 }
