@@ -475,4 +475,44 @@ img {
   .footer__contact a {
     display: none;
   }
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727;
+  display: none;
+}
+
+.burger-wrapper {
+  padding: 50px 30px 50px 30px;
+}
+
+.burger-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger__cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.burger__list a {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.burger__list li {
+  margin-top: 30px;
 }/*# sourceMappingURL=price.css.map */
