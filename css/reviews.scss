@@ -147,12 +147,12 @@
   //////////..................................Welcome....................................................
   
   .welcome {
-    background-image: url(img/price/price.png);
+    background-image: url(img/reviews/reviews.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 410px 15px 90px 15px;
     @media (max-width: 480px) {
-      background-image: url(img/price/price_mobile.png);
+      background-image: url(img/reviews/mobile_reviews.png);
       padding: 340px 15px 90px 15px;
     }
   }
@@ -193,298 +193,78 @@
     }
   }
 
-  ////////////..................................Team...................................................
-  
-    .team {
-      padding: 70px 100px;
-    }
 
-  .team-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .team__text {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #000000;
-    @media (max-width: 480px) {
-      font-size: 13px;
-      line-height: 15px;
-      text-align: center;
-    }
-  }
-
-  //////////////////////////............................Greetings.......................................................
-
-  .greetings {
-    padding: 130px 0px 130px 0px;
-    @media (max-width: 480px) {
-      padding: 70px 0px 70px 0px;
-    }
-  }
-  
-  .greetings-body {
-    display: flex;
-    gap: 40px;
-    @media (max-width: 1000px) {
-      gap: 10px;
-    }
-    @media (max-width: 480px) {
-      flex-direction: column;
-      align-items: center;
-      gap: 0px;
-    }
-  }
-  
-  .greetings__title {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 47px;
-    color: #000000;
-    @media (max-width: 1000px) {
-      font-size: 32px;
-      line-height: 42px;
-    }
-    @media (max-width: 480px) {
-      font-family: 'Roboto Slab';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 26px;
-      color: #000000;
-      margin-top: 10px;
-    }
-  }
-  
-  .greetings__text {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-    margin-top: 20px;
-    @media (max-width: 1000px) {
-      font-size: 16px;
-      line-height: 19px;
-    }
-    @media (max-width: 480px) {
-      font-family: 'Halvar Breitschrift';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      color: #000000;
-    }
-  }
-  
-  .greetings__img {
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-    
-  }
-  
-  .greetings-right {
-    width: 50%;
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-  }
-  
-  .greetings-left {
-    width: 50%;
-    @media (max-width: 480px) {
-      width: 100%;
-    }
-  }
-
-  ////////////..................................Uslugi..................................................
+  ////////////...................................Reviews.......................................
   
 
-  .uslugi-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .uslugi__title {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 47px;
-    color: #000000;
-    margin-bottom: 30px;
+.reviews {
+    padding: 130px 20px;
     @media (max-width: 480px) {
-      font-size: 20px;
-      line-height: 26px;
-    }
-  }
-
-  .uslugi__subtitle {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 50px;
-    @media (max-width: 480px) {
-      font-size: 12px;
-      line-height: 14px;
-    }
+        padding: 70px 20px 20px 20px;
+      }
 }
 
-  .uslugi-cards {
-    height: 100%;
-    padding: 5px;
+.reviews-body {
     width: 100%;
+}
+
+.reviews-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.block-top {
+    display: flex;
+    gap: 300px;
+    @media (max-width: 480px) {
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+      }
+}
+
+.left__avatar {
+    margin-bottom: 10px;
+}
+
+.avatar_img {
+    border-radius: 50%;
+}
+
+.block-bottom {
+    padding: 50px 0px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
-    flex-wrap: wrap;
     @media (max-width: 480px) {
-     flex-direction: column;
-     gap: 20px;
-    }
-  }
+        display: none;
+      }
+}
 
-  .uslugi__card {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-    height: 410px;
-    @media (max-width: 480px) {
-      width: 292px;
-      height: 332px;
-      margin-bottom: 50px;
-    }
-  }
-
-  .card-top {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    height: 182px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card_1 {
-    background: #356D9A;
-  }
-
-  .card_2 {
-    background: #CF5A38;
-  }
-
-  .card_3 {
-    background: #439CA0;
-  }
-
-  .card__title {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    color: #FFFFFF;
-    margin-bottom: 12px;
-    @media (max-width: 480px) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  .card__subtitle {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 37px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    @media (max-width: 480px) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  .card__line {
-    margin-bottom: 40px;
-  }
-
-  .card-bottom {
-    background: #FFFFFF;
-    border: 2px solid #356D9A;
-    border-radius: 0px 0px 10px 10px;
-    height: 227px;
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-   
-  }
-
-  .card__list li {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    list-style-position: outside;
-    padding: 0;
-    color: #000000;
-    list-style: circle;
-    @media (max-width: 480px) {
-      font-size: 13px;
-      line-height: 15px;
-    }
-  }
-
-  .duty-list {
-    font-family: 'Halvar Breitschrift';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 20px;
-    @media (max-width: 480px) {
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
-
-  .duty__text {
+.right__text {
     font-family: 'Halvar Breitschrift';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
+    font-size: 20px;
+    line-height: 23px;
     color: #000000;
-    margin-bottom: 20px;
     @media (max-width: 480px) {
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+      }
+}
+
+.avatar__signature {
+    font-family: 'Halvar Breitschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
 
   ////////////..................................Form......................................................
 
