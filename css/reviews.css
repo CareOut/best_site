@@ -116,6 +116,7 @@ img {
   line-height: 21px;
   color: #FFFFFF;
   margin-left: 25px;
+  transition: all 0.5s;
 }
 @media (max-width: 1000px) {
   .header__list a {
@@ -125,6 +126,14 @@ img {
   }
 }
 
+.header__list a:hover {
+  color: #8d8585;
+}
+
+.header__contact a:hover {
+  color: #8d8585;
+}
+
 .header__contact a {
   font-family: "Roboto Slab";
   font-style: normal;
@@ -132,6 +141,7 @@ img {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
+  transition: all 0.5s;
 }
 @media (max-width: 1000px) {
   .header__contact a {
@@ -435,6 +445,7 @@ img {
   line-height: 21px;
   color: #FFFFFF;
   margin-left: 25px;
+  transition: all 0.5s;
 }
 
 .footer__contact a {
@@ -444,11 +455,20 @@ img {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
+  transition: all 0.5s;
 }
 @media (max-width: 480px) {
   .footer__contact a {
     display: none;
   }
+}
+
+.footer__list a:hover {
+  color: #8d8585;
+}
+
+.footer__contact a:hover {
+  color: #8d8585;
 }
 
 .burger {
