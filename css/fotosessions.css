@@ -165,14 +165,14 @@ img {
 }
 
 .welcome {
-  background-image: url(img/weddings/weddings.png);
+  background-image: url(img/fotosessions/sessions.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 410px 15px 90px 15px;
 }
 @media (max-width: 480px) {
   .welcome {
-    background-image: url(img/weddings/weddings-mobile.png);
+    background-image: url(img/fotosessions/mobile_sessions.png);
     padding: 340px 15px 90px 15px;
   }
 }
@@ -201,6 +201,7 @@ img {
 }
 
 .welcome__text {
+  display: none;
   font-family: "Halvar Breitschrift";
   font-style: normal;
   font-weight: 700;
@@ -217,25 +218,25 @@ img {
   }
 }
 
-.weddings {
+.parties {
   padding: 130px 20px;
 }
 @media (max-width: 480px) {
-  .weddings {
+  .parties {
     padding: 70px 20px;
   }
 }
 
-.weddings-body {
+.parties-body {
   display: flex;
   flex-direction: column;
 }
 
-.weddings-block {
+.parties-block {
   margin-bottom: 130px;
 }
 @media (max-width: 480px) {
-  .weddings-block {
+  .parties-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -515,4 +516,4 @@ img {
 
 .burger__list li {
   margin-top: 30px;
-}/*# sourceMappingURL=weddings.css.map */
+}/*# sourceMappingURL=fotosessions.css.map */
