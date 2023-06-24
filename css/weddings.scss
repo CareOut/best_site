@@ -159,6 +159,8 @@
   //////////..................................Welcome....................................................
   
   .welcome {
+    width: 100%;
+    height: 100vh;
     background-image: url(img/weddings/weddings.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,6 +312,7 @@
     @media (max-width: 480px) {
       font-size: 11px;
       line-height: 15px;
+      text-align: center;
      }
   }
   
