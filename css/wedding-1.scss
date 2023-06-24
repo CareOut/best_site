@@ -159,12 +159,12 @@
   //////////..................................Welcome....................................................
   
   .welcome {
-    background-image: url(img/reviews/reviews.png);
+    background-image: url(img/wedding-1/wedding_1.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 410px 15px 90px 15px;
     @media (max-width: 480px) {
-      background-image: url(img/reviews/mobile_reviews.png);
+      background-image: url(img/wedding-1/mobile-wedding_1.png);
       padding: 340px 15px 90px 15px;
     }
   }
@@ -206,8 +206,281 @@
   }
 
 
+  ////////////..................................Team...................................................
+  
+  .team {
+    padding: 70px 100px;
+}
+
+  .team-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .team__text {
+  font-family: 'Halvar Breitschrift';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  @media (max-width: 480px) {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+  }
+  }
 
 
+//////////////.................................Three-photo...............................................
+
+.three-photo {
+  padding: 80px 15px;
+}
+
+.three-photo-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+//////////////..................................Gallery...................................................
+
+
+  .gallery-foto {
+    padding: 50px 15px;
+  }
+
+  .gallery-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(225px,1fr));
+    grid-template-rows: repeat(3, 13vw);
+    grid-gap: 10px;
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(3, minmax(100px,1fr));
+      grid-template-rows: repeat(5, 13vw);
+      grid-gap: 10px;
+    }
+  }
+
+  .slider__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gallery-slide_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media (max-width: 480px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  .gallery-slide_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media (max-width: 480px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  .gallery-slide_3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media (max-width: 480px) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  .gallery-slide_4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media (max-width: 480px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
+  .gallery-slide_5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media (max-width: 480px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
+  .gallery-slide_6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (max-width: 480px) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
+  .gallery-slide_7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (max-width: 480px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+
+  .gallery-slide_8 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (max-width: 480px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+
+  .gallery-slide_9 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (max-width: 480px) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+
+  .gallery-slide_10 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media (max-width: 480px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  }
+
+  .gallery-slide_11 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (max-width: 480px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  }
+
+  .gallery-slide_12 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (max-width: 480px) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  }
+
+  .gallery-slide_13 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (max-width: 480px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+  }
+
+  .gallery-slide_14 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (max-width: 480px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+  }
+
+  .gallery-slide_15 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    @media (max-width: 480px) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+  }
+
+ 
+
+ 
+ 
   ////////////..................................Form......................................................
 
 
