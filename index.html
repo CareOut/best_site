@@ -195,11 +195,11 @@
             <div class="form-body">
                 <h4 class="form__title">Оставьте свои контакты и мы свяжемся с Вами!</h4>
                 <div class="form__line"><img src="css/img/main/form_line.png" class="line__img" alt=""></div>
-                <form class="form__form" action="#">
-                    <input class="form__input" type="text" placeholder="Как вас зовут?">
-                    <input class="form__input" type="tel" placeholder="Ваш номер телефона">
-                    <input class="form__input" type="email" placeholder="Ваш Email">
-                    <button type="submit" class="form__button">ОТПРАВИТЬ</button>
+                <form class="form__form" action="mail.php" name="form" method="post" id="form_message">
+                    <input class="form__input" type="text" name="name" placeholder="Как вас зовут?">
+                    <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона">
+                    <input class="form__input" type="email" name="email" placeholder="Ваш Email">
+                    <button id="submit" type="submit" class="form__button">ОТПРАВИТЬ</button>
                 </form>
             </div>
         </div>
