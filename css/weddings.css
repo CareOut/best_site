@@ -253,6 +253,13 @@ img {
   line-height: 47px;
   color: #000000;
 }
+@media (max-width: 480px) {
+  .block__title {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 
 .block__subtitle {
   font-family: "Halvar Breitschrift";
