@@ -166,7 +166,7 @@ img {
 
 .welcome {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(img/wedding-1/wedding_1.png);
   background-repeat: no-repeat;
   background-size: cover;
