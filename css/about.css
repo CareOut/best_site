@@ -164,6 +164,10 @@ img {
   }
 }
 
+.header__img {
+  width: 100%;
+}
+
 .welcome {
   width: 100%;
   min-height: 100vh;
@@ -376,6 +380,13 @@ img {
   line-height: 47px;
   color: #1F1F1F;
 }
+@media (max-width: 1000px) {
+  .form__title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
 @media (max-width: 480px) {
   .form__title {
     font-size: 11px;
@@ -473,12 +484,14 @@ img {
 
 .footer {
   background-color: #1F1F1F;
+  min-height: 80px;
 }
 
 .footer-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 0px 15px 0px;
 }
 @media (max-width: 480px) {
   .footer-body {
@@ -508,6 +521,21 @@ img {
   margin-left: 25px;
   transition: all 0.5s;
 }
+@media (max-width: 1000px) {
+  .footer__list a {
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.footer__list a:hover {
+  color: #8d8585;
+}
+
+.footer__contact a:hover {
+  color: #8d8585;
+}
 
 .footer__contact a {
   font-family: "Roboto Slab";
@@ -518,18 +546,20 @@ img {
   color: #FFFFFF;
   transition: all 0.5s;
 }
+@media (max-width: 1000px) {
+  .footer__contact a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 @media (max-width: 480px) {
   .footer__contact a {
     display: none;
   }
 }
 
-.footer__list a:hover {
-  color: #8d8585;
-}
-
-.footer__contact a:hover {
-  color: #8d8585;
+.footer__img {
+  width: 100%;
 }
 
 .burger {

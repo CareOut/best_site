@@ -164,6 +164,10 @@ img {
   }
 }
 
+.header__img {
+  width: 100%;
+}
+
 .welcome {
   width: 100%;
   min-height: 100vh;
@@ -243,6 +247,11 @@ img {
   display: flex;
   gap: 300px;
 }
+@media (max-width: 1000px) {
+  .block-top {
+    gap: 50px;
+  }
+}
 @media (max-width: 480px) {
   .block-top {
     flex-direction: column;
@@ -252,6 +261,7 @@ img {
 }
 
 .left__avatar {
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -260,14 +270,24 @@ img {
 }
 
 .block-bottom {
+  width: 100%;
   padding: 50px 0px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 820px) {
+  .block-bottom {
+    gap: 10px;
+  }
 }
 @media (max-width: 480px) {
   .block-bottom {
     display: none;
   }
+}
+
+.bottom-img {
+  width: 100%;
 }
 
 .right__text {
@@ -317,6 +337,13 @@ img {
   font-size: 36px;
   line-height: 47px;
   color: #1F1F1F;
+}
+@media (max-width: 1000px) {
+  .form__title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .form__title {
@@ -415,17 +442,14 @@ img {
 
 .footer {
   background-color: #1F1F1F;
+  min-height: 80px;
 }
 
 .footer-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-@media (max-width: 480px) {
-  .footer-body {
-    justify-content: center;
-  }
+  padding: 15px 0px 15px 0px;
 }
 
 .footer__list {
@@ -450,6 +474,21 @@ img {
   margin-left: 25px;
   transition: all 0.5s;
 }
+@media (max-width: 1000px) {
+  .footer__list a {
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.footer__list a:hover {
+  color: #8d8585;
+}
+
+.footer__contact a:hover {
+  color: #8d8585;
+}
 
 .footer__contact a {
   font-family: "Roboto Slab";
@@ -460,18 +499,20 @@ img {
   color: #FFFFFF;
   transition: all 0.5s;
 }
+@media (max-width: 1000px) {
+  .footer__contact a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 @media (max-width: 480px) {
   .footer__contact a {
     display: none;
   }
 }
 
-.footer__list a:hover {
-  color: #8d8585;
-}
-
-.footer__contact a:hover {
-  color: #8d8585;
+.footer__img {
+  width: 100%;
 }
 
 .burger {

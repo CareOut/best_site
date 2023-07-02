@@ -154,6 +154,9 @@
     }
   }
  
+  .header__img {
+    width: 100%;
+  }
 
 
   //////////..................................Welcome....................................................
@@ -200,6 +203,11 @@
     line-height: 28px;
     color: #FFFFFF;
     margin: 30px 0px 30px 0px;
+    @media (max-width: 900px) {
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+    }
     @media (max-width: 480px) {
       font-size: 16px;
       line-height: 19px;
@@ -373,8 +381,9 @@
     justify-content: space-between;
     margin-bottom: 70px;
     flex-wrap: wrap;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
      flex-direction: column;
+     align-items: center;
      gap: 20px;
     }
   }
@@ -384,6 +393,11 @@
     flex-direction: column;
     width: 360px;
     height: 410px;
+    @media (max-width: 900px) {
+      width: 420px;
+      height: 360px;
+      margin-bottom: 50px;
+    }
     @media (max-width: 480px) {
       width: 292px;
       height: 332px;
@@ -526,6 +540,11 @@
     font-size: 36px;
     line-height: 47px;
     color: #1F1F1F;
+    @media (max-width: 1000px) {
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+     }
     @media (max-width: 480px) {
       font-size: 11px;
       line-height: 15px;
@@ -602,28 +621,30 @@
   //////////////////////..........................Footer................................................................
   
   .footer {
-  background-color: #1F1F1F;
+    background-color: #1F1F1F;
+    min-height: 80px;
   }
-  
+
   .footer-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0px 15px 0px;
     @media (max-width: 480px) {
-     justify-content: center;
-     }
+      justify-content: center;
+    }
   }
-  
+
   .footer__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0px 30px 0px;
-    @media (max-width: 480px) {
-      display: none;
-     }
+      @media (max-width: 480px) {
+        display: none;
+      }
   }
-  
+
   .footer__list a {
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -633,18 +654,10 @@
     color: #FFFFFF;
     margin-left: 25px;
     transition: all 0.5s;
-  }
-  
-  .footer__contact a {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-    transition: all 0.5s;
-    @media (max-width: 480px) {
-      display: none;
+    @media (max-width: 1000px) {
+      margin-left: 10px;
+      font-size: 15px;
+      line-height: 20px;
     }
   }
 
@@ -654,6 +667,27 @@
 
   .footer__contact a:hover {
     color: #8d8585;
+  }
+
+  .footer__contact a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
+  }
+
+  .footer__img {
+    width: 100%;
   }
   
   ///////////.............................................Burger..................................................

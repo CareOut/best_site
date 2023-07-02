@@ -154,6 +154,9 @@
     }
   }
  
+  .header__img {
+    width: 100%;
+  }
 
 
   //////////..................................Welcome....................................................
@@ -253,7 +256,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  @media (max-width: 480px) {
+  @media (max-width: 900px) {
    flex-wrap: nowrap;
    gap: 10px;
   }
@@ -300,7 +303,7 @@
     grid-template-columns: repeat(5, minmax(225px,1fr));
     grid-template-rows: repeat(3, 13vw);
     grid-gap: 10px;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-template-columns: repeat(3, minmax(100px,1fr));
       grid-template-rows: repeat(5, 13vw);
       grid-gap: 5px;
@@ -319,7 +322,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
@@ -332,7 +335,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -345,7 +348,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 1;
@@ -358,7 +361,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
@@ -371,7 +374,7 @@
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
@@ -384,7 +387,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 2;
@@ -397,7 +400,7 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 3;
@@ -410,7 +413,7 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
@@ -423,7 +426,7 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 3;
@@ -436,7 +439,7 @@
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 4;
@@ -449,7 +452,7 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 4;
@@ -462,7 +465,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 4;
@@ -475,7 +478,7 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 5;
@@ -488,7 +491,7 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 5;
@@ -501,7 +504,7 @@
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
-    @media (max-width: 480px) {
+    @media (max-width: 900px) {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 5;
@@ -536,6 +539,11 @@
     font-size: 36px;
     line-height: 47px;
     color: #1F1F1F;
+    @media (max-width: 1000px) {
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+     }
     @media (max-width: 480px) {
       font-size: 11px;
       line-height: 15px;
@@ -612,28 +620,30 @@
   //////////////////////..........................Footer................................................................
   
   .footer {
-  background-color: #1F1F1F;
+    background-color: #1F1F1F;
+    min-height: 80px;
   }
-  
+
   .footer-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0px 15px 0px;
     @media (max-width: 480px) {
-     justify-content: center;
-     }
+      justify-content: center;
+    }
   }
-  
+
   .footer__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0px 30px 0px;
-    @media (max-width: 480px) {
-      display: none;
-     }
+      @media (max-width: 480px) {
+        display: none;
+      }
   }
-  
+
   .footer__list a {
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -643,18 +653,10 @@
     color: #FFFFFF;
     margin-left: 25px;
     transition: all 0.5s;
-  }
-  
-  .footer__contact a {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-    transition: all 0.5s;
-    @media (max-width: 480px) {
-      display: none;
+    @media (max-width: 1000px) {
+      margin-left: 10px;
+      font-size: 15px;
+      line-height: 20px;
     }
   }
 
@@ -664,6 +666,27 @@
 
   .footer__contact a:hover {
     color: #8d8585;
+  }
+
+  .footer__contact a {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
+  }
+
+  .footer__img {
+    width: 100%;
   }
   
   ///////////.............................................Burger..................................................
