@@ -9,6 +9,7 @@
    <script src="js/lightbox-plus-jquery.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/burger.js" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -195,11 +196,13 @@
             <div class="form-body">
                 <h4 class="form__title">Оставьте свои контакты и мы свяжемся с Вами!</h4>
                 <div class="form__line"><img src="css/img/main/form_line.png" class="line__img" alt=""></div>
-                <form class="form__form" action="mail.php" name="form" method="post" id="form_message">
-                    <input class="form__input" type="text" name="name" placeholder="Как вас зовут?">
-                    <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона">
-                    <input class="form__input" type="email" name="email" placeholder="Ваш Email">
-                    <button id="submit" type="submit" class="form__button">ОТПРАВИТЬ</button>
+                <form class="form__form" action="send_mail.php" name="form" method="post">
+                    <input class="form__input" type="text" name="name" placeholder="Как вас зовут?" data-reg="^[А-ЯЁ][а-яё]*$" id="name">
+                    <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона" id="phone"
+                    data-reg="^((\+7|7|8)+([0-9]){10})$">
+                    <input class="form__input" type="email" name="email" placeholder="Ваш Email"  id="email"
+                    data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                    <input id="submit" type="submit" class="form__button" id="button" value="Отправить"/>
                 </form>
             </div>
         </div>
